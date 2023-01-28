@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700">
+  <meta property="og:image" content="https://cdn.discordapp.com/avatars/342038795757027329/a_d4a5bc6eb6695d8fa876db3fb3a0c6d2.gif?size=4096">
+  <title>Luna Hackley</title>
+</head>
+<body>
+  <style>
+    span {
+      float: left;
+      width: 25rem;
+    }
+  </style>
+  <span>
+    <button id="run">Run</button>
+    <br>
+    <canvas id="canvas">
+  </span>
+  <span style="float:left">
+    <div>Debugging
+      <small style="color: #006600" id="status">Ready</small>
+      <button id="reset">Reset</button> 
+      <button id="ex">Reset To Example</button> 
+    </div>
+    <span id="input" style="width: 45rem">
+      <span style="width: 45rem">
+        <p style="height: 0.5rem">Whole Map</p>
+        <input type="number" id="c0" style="width: 5rem" placeholder="Map Width">
+        <input type="number" id="c1" style="width: 5.5rem" placeholder="Map Height">
+      </span>
+      <input type="number" id="w0" style="width: 8rem" placeholder="Max Tunnel Length">
+      <input type="number" id="w1" style="width: 5.8rem" placeholder="Max Turns">
+      <input type="number" id="w2" style="width: 7.8rem" placeholder="Spawned Tunnels">
+      <p style="height: 0.5rem">Borders</p>
+      <input type="number" id="b0" style="width: 8rem" placeholder="Max Tunnel Length">
+      <input type="number" id="b1" style="width: 5.8rem" placeholder="Max Turns">
+      <input type="number" id="b2" style="width: 7.8rem" placeholder="Spawned Tunnels">
+      <p style="height: 0.5rem">Other</p>
+      <input type="number" id="c4" style="width: 6.5rem" placeholder="Minimum Walls">
+      <span style="width: 45rem">
+        <input type="checkbox" id="c5" style="width: 1rem">
+        <label for="c5">Dig From Center</label><br>
+        <input type="checkbox" id="c6" style="width: 1rem">
+        <label for="c6">Remove Singles</label><br>
+      </span>
+    </span>
+    <div>
+      <span style="color: #000000; width: 5rem">Total Walls:</span>
+      <span style="color: #006600; width: 0.5rem" id="total"></span>
+    </div>
+  </span>
+  <script src="index.js" type="module"></script>
+</body>
